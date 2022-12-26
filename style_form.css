@@ -1,0 +1,116 @@
+body {
+  font-family: "Maven Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("background.jpg");
+  background-size: cover;
+  color: #202424;
+}
+.container {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 8px 15px 3px black;
+  width: 400px;
+  height: 530px;
+  border: 1px solid grey;
+  border-radius: 15px;
+  background-color: rgb(60 60 60 / 0.2);
+  padding: 40px;
+}
+
+.btn {
+  margin-top:40px;
+  display: flex;
+  justify-content: center;
+  background-color: #202424;
+  color: #fff;
+  font-size:15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #202424;
+  transition: all 0.3s ease-in;
+
+}
+.btn:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background-color: transparent;
+  color: #202424;
+}
+#reset{
+  background-color: transparent;
+  color: #202424;
+}
+#reset:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background-color:#202424;
+  color: #fff;
+}
+.buttons{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info h2{
+  
+  font-size: 30px;
+}
+td input[type="text"],td input[type="email"]{
+  border: 1px solid rgba(18, 17, 17, 0.3);
+  border-radius: 4px;
+  background-color: rgb(241, 235, 235,0.3);
+  width: 160px;
+  padding: 10px;
+  margin-top: 15px;
+}
+td input[type='button']{
+  display: inline-block;
+  width: 100px;
+}
+td input[type='reset']{
+  position: relative;
+  left: 30px;
+  display: inline-block;
+}
+
+#thanks{
+  display: block;
+}
+#thanks h2{
+  /* color:grey; */
+  margin-top: 165px;
+}
+/*-------------MEDIA QUERIES --------------*/
+@media (max-width: 700px) {
+  .info {
+    /* position: relative;
+        top:10px; */
+    width: 66%;
+    height: 70%;
+  }
+
+  .btn a {
+    font-size: 15px;
+  }
+  .btn {
+    margin-top: 80px;
+  }
+  @media (max-width: 385px) {
+    .info {
+      margin: auto 20px;
+      transform: scale(0.8);
+    }
+  }
+}
+
+

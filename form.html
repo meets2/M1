@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_form.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet | Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <form action="data.php" method="post">  
+          <table>
+            <h2>Registration Form</h2>
+            <tr>
+              <th>Name : </th>
+              <td><input type="text" name="name" id="" placeholder="Enter your full name" required></td>
+            </tr>
+            <tr>
+              <th>Gender : </th>
+              <td>
+                <input type="radio" name="gender" value="Male" required>Male
+                <input type="radio" name="gender" value="Female" required>Female
+              </td>
+            </tr>
+            <tr>
+              <th>College : </th>
+              <td><input type="text" name="college" placeholder="Enter College name" required></td>
+            </tr>
+            <tr>
+              <th>City : </th>
+              <td><input type="text" name="city" placeholder="Enter your City" required></td>
+            </tr>
+            <tr>
+              <th>Email : </th>
+              <td><input type="email" name="email" placeholder="Enter your E-mail" required></td>
+            </tr>
+            <div class="buttons">
+              <tr>
+                <td colspan="2">
+                  <a href="Error_404.html"><input type="button" value="Submit" name="submit" class="btn"></a>
+                  
+                  <input type="reset" value="Clear" class="btn" id="reset">
+                </td>
+              </tr>
+            </div>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
